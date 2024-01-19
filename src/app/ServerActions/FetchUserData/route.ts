@@ -1,9 +1,9 @@
 'use server';
 import { auth } from "@/auth";
 
-export const fetchUserData = async () => {
-    const domain = process.env.NEXT_PUBLIC_APP_URL;
+const domain = process.env.NEXT_PUBLIC_APP_URL;
 
+export const GET = async () => {
     const session = await auth();
 
     if(session){

@@ -10,7 +10,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Root, createRoot } from 'react-dom/client';
 
 import { userProps } from '@/Types/route';
-import { fetchUserData } from '@/app/ServerActions/FetchUserData/route';
+import { GET } from '@/app/ServerActions/FetchUserData/route';
 
 import FeedBackMsg from '@/app/components/layout/FeedBackMsg';
 
@@ -46,7 +46,7 @@ export default function Class({ params }: any){
     const router = useRouter();
 
     useEffect(() => {
-        fetchUserData().then((data) => {
+        GET().then((data) => {
             setSearchUser(data)
         })
     }, [])

@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState, useTransition } from 'react';
 import { Root, createRoot } from 'react-dom/client';
 
-import { fetchUserData } from '@/app/ServerActions/FetchUserData/route';
+import { GET } from '@/app/ServerActions/FetchUserData/route';
 
 import FeedBackMsg from '@/app/components/layout/FeedBackMsg';
 
@@ -36,7 +36,7 @@ const ProfileSettings = () => {
     }, []);
 
     useEffect(() => {
-        fetchUserData().then((data) => {
+        GET().then((data) => {
             setFormData({
                 firstName: data?.firstName || '',
                 lastName: data?.lastName || '',

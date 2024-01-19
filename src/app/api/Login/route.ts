@@ -1,9 +1,8 @@
-import { auth } from '@/auth'
 import { Login } from '@/services/User/route'
 
 import { NextResponse } from 'next/server'
 
-export const POST = auth( async (req: Request) => {
+export const POST = async (req: Request) => {
     try{
         const body = await req.json();
         const data = await Login(body);
@@ -19,4 +18,4 @@ export const POST = auth( async (req: Request) => {
         const errorMsg = err.message;
         if(errorMsg.includes('NEXT_REDIRECT')) return NextResponse.json({ message: 'User Logged' }, { status: 200 });
     }
-})
+}

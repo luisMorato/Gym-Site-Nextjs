@@ -5,7 +5,7 @@ const { plans } =  data;
 import { useEffect, useRef, useState } from 'react';
 import { Root, createRoot } from 'react-dom/client';
 
-import { fetchUserData } from '@/app/ServerActions/FetchUserData/route'
+import { GET } from '@/app/ServerActions/FetchUserData/route'
 
 import { userProps } from '@/Types/route';
 
@@ -28,7 +28,7 @@ export default function PricePlans() {
       }, [])
 
     useEffect(() => {
-        fetchUserData().then((data) => {
+        GET().then((data) => {
             setSearchUser(data)
         })
     }, [])

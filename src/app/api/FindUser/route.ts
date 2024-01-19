@@ -1,9 +1,8 @@
 import { getUsersByEmail } from '@/services/User/route';
-import { auth } from '@/auth';
 
 import { NextResponse } from 'next/server';
 
-export const GET = auth( async (req: Request) => {
+export const GET = async (req: Request) => {
     try{
         const queryParams = new URLSearchParams(req.url.split('?')[1]);
         const email = queryParams.get('email') as string;
@@ -18,4 +17,4 @@ export const GET = auth( async (req: Request) => {
     } catch (err:any){
         return new NextResponse("Server Error", { status: 500 });
     }
-})
+}
