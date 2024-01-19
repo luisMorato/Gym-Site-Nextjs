@@ -1,0 +1,334 @@
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.navbar ul li:hover{
+    transform: translateY(-4px);
+}
+
+.OpenMobileMenuBtn, .CloseMobileMenuBtn, .CloseMobileMenu{
+    display: none;
+}
+
+
+.CloseMobileMenuBtn{
+    color: #FFF;
+}
+
+@media screen and (max-width: 1280px){
+
+}
+
+@media screen and (max-width: 992px){
+    .OpenMobileMenuBtn{
+        display: block;
+        position: absolute;
+        right: 8px;
+        top: 12px;
+    }
+
+    .CloseMobileMenu{
+        display: block;
+        background-color: #FD0000;
+        position: relative;
+        padding-bottom: 32px;
+    }
+
+    @keyframes CloseDivItemsFadeIn{
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .CloseMobileMenu h2{
+        font-size: 28px;
+        left: 40%;
+        position: absolute;
+        top: 12px;
+        animation: CloseDivItemsFadeIn .5s ease-in forwards;
+    }
+
+    .CloseMobileMenuBtn{
+        display: block;
+        position: absolute;
+        font-size: 40px;
+        top: 12px;
+        right: 4px;
+        animation: CloseDivItemsFadeIn .5s ease-in forwards;
+    }
+
+    .navbar ul{
+        display: none;
+        background-color: #D9D9D9;
+        flex-direction: column;
+        font-size: 20px;
+        height: 604px;
+        position: fixed;
+        top: 0px;
+        right: 0;
+        z-index: 3;
+    }
+
+    @keyframes menuItemsFadeIn {
+        from {
+            transform: translateX(150%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .navbar ul li{
+        animation: menuItemsFadeIn .6s ease-in forwards;
+        border-bottom: 1px solid #FFF;
+        color: #000;
+        padding: 15px;
+    }
+
+    @keyframes hideSideMenu{
+        from {
+            width: 40%;
+        }
+        
+        to {
+            width: 0%;
+        }
+    }
+
+    .hideSideMenu ul{
+        animation: hideSideMenu .4s ease-out forwards;
+    }
+
+    @keyframes showSideMenu{
+        from {
+            width: 0%;
+        }
+        
+        to {
+            width: 40%;
+        }
+    }
+
+    .showSideMenu ul{
+        display: flex;
+        animation: showSideMenu .4s ease-in forwards;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .OpenMobileMenuBtn{
+        display: block;
+        position: absolute;
+        right: 8px;
+        top: 12px;
+    }
+
+    .CloseMobileMenu{
+        display: block;
+        background-color: #FD0000;
+        position: relative;
+        padding-bottom: 32px;
+    }
+
+    @keyframes CloseDivItemsFadeIn{
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .CloseMobileMenu h2{
+        animation: CloseDivItemsFadeIn .5s ease-in forwards;
+        font-size: 24px;
+        left: 40%;
+        position: absolute;
+        top: 12px;
+    }
+
+    .CloseMobileMenuBtn{
+        animation: CloseDivItemsFadeIn .5s ease-in forwards;
+        display: block;
+        font-size: 40px;
+        position: absolute;
+        top: 12px;
+        right: 4px;
+    }
+
+    .navbar ul{
+        display: none;
+        background-color: #D9D9D9;
+        flex-direction: column;
+        font-size: 20px;
+        height: 604px;
+        position: fixed;
+        top: 0px;
+        right: 0;
+        z-index: 3;
+    }
+
+    @keyframes menuItemsFadeIn {
+        from {
+            transform: translateX(150%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .navbar ul li{
+        padding: 15px;
+        color: #000;
+        border-bottom: 1px solid #FFF;
+        animation: menuItemsFadeIn .6s ease-in forwards;
+    }
+
+    .navbar ul li:hover{
+        font-weight: bold;
+    }
+
+    @keyframes hideSideMenu{
+        from {
+            width: 40%;
+        }
+        
+        to {
+            width: 0%;
+        }
+    }
+
+    .hideSideMenu ul{
+        animation: hideSideMenu .4s ease-out forwards;
+    }
+
+    @keyframes showSideMenu{
+        from {
+            width: 0%;
+        }
+        
+        to {
+            width: 40%;
+        }
+    }
+
+    .showSideMenu ul{
+        display: flex;
+        animation: showSideMenu .4s ease-in forwards;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .OpenMobileMenuBtn{
+        display: block;
+        position: absolute;
+        right: 4px;
+        top: 12px;
+    }
+
+    .navbar .CloseMobileMenu{
+        display: block;
+        background-color: #FD0000;
+        position: relative;
+        padding-bottom: 32px;
+    }
+
+    @keyframes CloseDivItemsFadeIn{
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .navbar .CloseMobileMenu h2{
+        animation: CloseDivItemsFadeIn .5s ease-in forwards;
+        font-size: 20px;
+        left: 40%;
+        position: absolute;
+        top: 12px;
+    }
+
+    .navbar .CloseMobileMenuBtn{
+        animation: CloseDivItemsFadeIn .5s ease-in forwards;
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        top: 12px;
+        right: 4px;
+    }
+
+    .navbar ul{
+        display: none;
+        background-color: #D9D9D9;
+        flex-direction: column;
+        font-size: 16px;
+        height: 560px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 3;
+    }
+
+    @keyframes menuItemsFadeIn {
+        from {
+            transform: translateX(150%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .navbar ul li{
+        padding: 15px;
+        color: #000;
+        border-bottom: 1px solid #FFF;
+        animation: menuItemsFadeIn .6s ease-in forwards;
+    }
+
+    .navbar ul li:hover{
+        font-weight: bold;
+    }
+
+    @keyframes hideSideMenu{
+        from {
+            width: 60%;
+        }
+        
+        to {
+            width: 0%;
+        }
+    }
+
+    .hideSideMenu ul{
+        animation: hideSideMenu .4s ease-out forwards;
+    }
+
+    @keyframes showSideMenu{
+        from {
+            width: 0%;
+        }
+        
+        to {
+            width: 60%;
+        }
+    }
+
+    .showSideMenu ul{
+        display: flex;
+        animation: showSideMenu .4s ease-in forwards;
+    }
+}

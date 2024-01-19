@@ -1,0 +1,495 @@
+.profile h1{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+.profile h2{
+    font-size: 18px;
+}
+
+.cards{
+    border-bottom: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 16px auto;
+    padding-bottom: 32px;
+    width: 92%;
+}
+
+.cards section{
+    align-items: flex-start;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 12px 32px;
+    position: relative;
+    width: fit-content;
+}
+
+.cards section h2{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.roundGreen{
+    background-color: #2ECC71;
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 4px;
+    height: 9px;
+    width: 9px;
+}
+
+.roundRed{
+    background-color: #FF6347;
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 4px;
+    height: 9px;
+    width: 9px;
+}
+
+.cards section p{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.cards section:last-of-type p{
+    font-size: 12px;
+}
+
+.paymentData{
+    align-items: center;
+    background-color: #adadad;
+    border-radius: 4px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 8px 4px;
+    width: calc(100% + 10px);
+}
+
+.paymentData div p{
+    margin-bottom: 0;
+}
+
+.paymentData div h3{
+    font-size: 14px;
+}
+
+.paymentData div p span{
+    color: #353535;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cards section a{
+    cursor: pointer;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.cards section a:hover{
+    font-weight: bold;
+}
+
+
+
+/*------------------ My Plans Style ------------------*/
+.myPlanContent{
+    display: flex;
+    margin: 16px auto;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 90%;
+}
+
+.plan{
+    background-color: #D1CFCF;
+    border-radius: 12px;
+    text-align: center;
+    padding: 0 16px;
+    width: 34%;
+}
+
+.plan h1{
+    color: #ff0000;
+    font-size: 20px;
+    margin-top: 12px;
+    position: relative;
+}
+
+.plan h1::after{
+    content: '';
+    background-color: #000000;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.plan span{
+    color: rgba(0, 0, 0, 0.64);
+}
+
+.plan h2{
+    display: inline;
+    color: #000000;
+    font-weight:bold;
+}
+
+.plan span:not(:last-of-type), .plan h2{
+    font-size: 18px;
+}
+
+.plan ul {
+    margin: 0 auto;
+}
+
+.plan li{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.64);
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    padding-bottom: 4px;
+}
+
+.plan ul:last-child{
+    margin-bottom: 40px;
+}
+
+.dontHavePlan{
+    align-items: center;
+    background-color: #D1CFCF;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 16px;
+    text-align: center;
+    width: 34%;
+    height: 350px;
+}
+
+.dontHavePlan h1{
+    font-size: 16px;
+}
+
+.dontHavePlan button{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 16px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 6px 28px;
+    transition: .4s ease-in-out;
+}
+
+.image{
+    height: 100px;
+    position: relative;
+    width: 250px;
+}
+
+.image img{
+    height: auto;
+    width: auto;
+}
+
+.upgradePlan, .yourUnit{
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #D1CFCF;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    width: 34%;
+}
+
+.yourUnit h2{
+    font-size: 16px;
+}
+
+.upgradePlan h3, .yourUnit h3{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.upgradePlan p, .yourUnit p{
+    font-size: 12px;
+    margin: 0 auto;
+    width: 92%;
+}
+
+.upgradePlan a, .yourUnit a{
+    bottom: 20px;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.upgradePlan button, .yourUnit button{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 16px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 28px;
+    transition: .4s ease-in-out;
+    text-wrap: nowrap;
+}
+
+.upgradePlan button:hover, .yourUnit button:hover, .dontHavePlan button:hover{
+    background-color: #000;
+    color: #FFF;
+}
+
+
+/*------------------ Know More Style ------------------*/
+.KnowMore{
+    display: flex;
+    margin: 16px auto;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 90%;
+}
+
+.app, .betterResults, .coaching{
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #D1CFCF;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    width: 34%;
+}
+
+.app h3, .betterResults h3, .coaching h3{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 12px 0;
+    padding: 0 12px;
+    text-align: center;
+}
+
+.app p, .betterResults p, .coaching p{
+    font-size: 12px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    padding: 12px;
+    width: 92%;
+}
+
+.betterResults p{
+    width: 100%;
+}
+
+.app a, .betterResults a, .coaching a{
+    bottom: 20px;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.app button, .betterResults button, .coaching button{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 16px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 28px;;
+    transition: .4s ease-in-out;
+}
+
+.logOutBtn{
+    display: flex;
+    margin: 32px 0;
+    position: relative;
+}
+
+.logOutBtn button{
+    border: 1px solid #000;
+    border-radius: 16px;
+    right: 8%;
+    padding: 4px 28px;
+    position: absolute;
+    transition: .4s;
+}
+
+.app button:hover, .betterResults button:hover, .coaching button:hover, .logOutBtn button:hover{
+    background-color: #000;
+    color: #FFF;
+}
+
+
+@media screen and (max-width: 1280px){
+
+}
+
+@media screen and (max-width: 992px){
+    .cards, .myPlanContent, .KnowMore{
+        width: 96%;
+    }
+
+    .cards section p{
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .cards section:last-of-type p{
+        font-size: 14px;
+    }
+
+    .paymentData div p{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    
+    .plan li, .upgradePlan p, .yourUnit p{
+        font-size: 14px;
+    }
+
+    .app p, .betterResults p, .coaching p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .cards, .myPlanContent, .KnowMore{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .cards section{
+        width: 85%;
+    }
+
+    .cards section p{
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .cards section:last-of-type p{
+        font-size: 14px;
+    }
+
+    .paymentData div h3, .paymentData div p, .paymentData div p span{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .plan, .upgradePlan, .yourUnit{
+        text-align: center;
+        width: 85%;
+    }
+
+    .image{
+        width: 100%;
+    }
+
+    .upgradePlan, .yourUnit{
+        position: unset;
+    }
+
+    .plan li, .upgradePlan p, .yourUnit p{
+        font-size: 14px;
+    }
+
+    .upgradePlan a, .yourUnit a{
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        position: unset;
+    }
+    
+    .app, .betterResults, .coaching{
+        text-align: center;
+        width: 85%;
+    }
+
+    .app p, .betterResults p, .coaching p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .cards, .myPlanContent, .KnowMore{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 92%;
+    }
+
+    .cards section{
+        width: 100%;
+    }
+
+    .cards section:last-of-type p{
+        font-size: 14px;
+    }
+
+    .cards section p{
+        font-size: 14px;
+        margin-bottom: 32px;
+    }
+
+    .cards section:last-of-type p{
+        font-size: 14px;
+    }
+
+    .paymentData div h3, .paymentData div p, .paymentData div p span{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .myPlanContent, .KnowMore{
+        width: 96%;
+    }
+
+    .plan, .upgradePlan, .yourUnit, .dontHavePlan{
+        width: 100%;
+    }
+
+    .upgradePlan, .yourUnit{
+        position: unset;
+    }
+
+    .upgradePlan a, .yourUnit a{
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        position: unset;
+    }
+    
+    .app, .betterResults, .coaching{
+        width: 100%;
+    }
+
+    /*Inherit width: 100% from .upgradePlan, .yourUnit, .app, .betterResults, .coaching*/
+    .image{
+        width: inherit;
+    }
+}

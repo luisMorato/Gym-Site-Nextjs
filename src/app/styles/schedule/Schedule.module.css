@@ -1,0 +1,170 @@
+.schedule{
+    background-color: #D9D9D9;
+    padding: 64px 0;
+}
+
+.title{
+    align-self: center;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    margin-top: 80px;
+    position: relative;
+    text-align: center;
+}
+
+.title::after{
+    background-color: #ff0000;
+    content: '';
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.schedule table{
+    background-color: #FFF;
+    border: 1px solid black;
+    color: #000000;
+    margin: 0 auto;
+    text-align: center;
+    width: fit-content;
+}
+
+.schedule table td{
+    border: 1px solid black;
+    font-size: 18px;
+    padding: 24px 8px;
+}
+
+.schedule table th{
+    background-color: #000000;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-bottom: none;
+    border-top: none;
+    font-size: 20px;
+    padding: 16px;
+}
+
+.schedule table th:last-child{
+    border-right: none;
+}
+
+.schedule table th:first-child{
+    border-left: none;
+}
+
+.itsclosed{
+    background-color: #a1a0a0;
+}
+
+
+@media screen and (max-width: 1280px){
+    .title{
+        font-size: 28px;
+    }
+
+    .title::after{
+        width: 132px;
+    }
+    
+    .schedule{
+        overflow-x: scroll;
+    }
+
+    .schedule table{
+        margin: 0 4px;
+    }
+
+    .schedule table th{
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .schedule table td{
+        font-size: 14px;
+        padding: 20px 16px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .title::after{
+        width: 180px;
+    }
+    
+    .schedule{
+        overflow-x: scroll;
+    }
+
+    .schedule table{
+        margin: 0 4px;
+    }
+
+    .schedule table th{
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+
+    .schedule table td{
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .title::after{
+        width: 160px;
+    }
+    
+    .schedule{
+        overflow-x: scroll;
+    }
+
+    .schedule table{
+        margin: 0 4px;
+    }
+    
+    .schedule table th{
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+
+    .schedule table td{
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .title{
+        font-size: 24px;
+        margin-bottom: 32px;
+        margin-top: 24px;
+    }
+
+    .title::after{
+        width: 32%;
+    }
+
+    .schedule{
+        overflow-x: scroll;
+    }
+
+    .schedule table{
+        margin: 0 4px;
+    }
+
+    .schedule table th{
+        font-size: 12px;
+        padding: 8px;
+    }
+    
+    .schedule table td{
+        font-size: 10px;
+        padding: 12px 4px;
+    }
+}

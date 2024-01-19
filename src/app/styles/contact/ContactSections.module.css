@@ -1,0 +1,130 @@
+.contact_section{
+    align-items: center;
+    border-bottom: 1px solid black;
+    display: flex;
+    gap: 28px;
+    justify-content: space-evenly;
+    margin-bottom: 32px;
+    padding-bottom: 48px;
+    width: 100%;
+}
+
+.contact_section section{
+    align-items: center;
+    background-color: #D1CFCF;
+    border: 1px solid black;
+    border-top-left-radius: 52px;
+    border-bottom-right-radius: 52px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0px;
+    text-align: center;
+    width: fit-content;
+}
+
+.contact_section section h2{
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.contact_section section p{
+    color: #878787;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    width: 64%;
+}
+
+.contact_section section a{
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+.contact_section section a::after{
+    background-color: red;
+    content: '';
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    transition: .4s ease-in-out;
+    width: 0%;
+}
+
+.contact_section section a:hover::after{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1280px){
+    .contact_section{
+        justify-content: space-around;
+        gap: 16px;
+    }
+
+    .contact_section section{
+        padding: 12px 0;
+    }
+
+    .contact_section section h2{
+        font-size: 20px;
+    }
+
+    .contact_section section p{
+        width: 72%;
+    }
+
+    .contact_section section a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .contact_section{
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .contact_section section h2{
+        font-size: 20px;
+    }
+
+    .contact_section section a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .contact_section{
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .contact_section section h2{
+        font-size: 20px;
+    }
+
+    .contact_section section a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .contact_section{
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .contact_section section h2{
+        font-size: 20px;
+    }
+
+    .contact_section section a{
+        font-size: 16px;
+    }
+}

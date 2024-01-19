@@ -1,0 +1,25 @@
+.notFound{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient('');
+    height: 80vh;
+    perspective: 800px;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+}
+
+.notFound h1{
+    transform: rotate(12deg);
+    filter: drop-shadow(16px 8px 8px rgba(255, 0, 0, 0.74))
+}
+
+
+.notFound button{
+    background-color: #ff0000;
+    border-radius: 16px;
+    color: #FFF;
+    font-weight: bold;
+    padding: 6px 28px;
+}

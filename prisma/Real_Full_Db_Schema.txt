@@ -1,0 +1,97 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Account {
+  id                  String  @id @default(cuid())
+  userId              String
+  type                String
+  provider            String
+  providerAccountId   String
+  refresh_token       String? @db.Text
+  access_token        String? @db.Text
+  expires_at          Int?
+  token_type          String?
+  scope               String?
+  id_token            String? @db.Text
+  session_state       String?
+  user                User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model User {
+  id                String  @id @default(cuid())
+  firstName         String
+  lastName          String
+  dateBirth         String
+  phoneNumber       String
+  email             String  @unique
+  createPassword    String  @unique
+  repeatPassword    String  @unique
+  accounts          Account[]
+  UserPlanID        Int?
+  isTwoFactorAuth   boolean @default(false)
+  twoFactorConfirmation   TwoFactorConfirmation?
+  userClass         UserClasses[]   @relation("ClassUsers")
+
+  userPlan          UserPlan?       @relation(fields: [UserPlanID], references: [id], onDelete: Cascade)
+}
+
+model UserPlan {
+  id                Int  @id @default(autoincrement())
+  level             String
+  price             Decimal
+  userPlanAccess    UserPlanAccess[]
+  user              User[]
+}
+
+model UserPlanAccess {
+  id            String  @id
+  string        String
+  userPlanID    Int
+
+  userPlan UserPlan   @relation(fields: [userPlanID], references: [id], onDelete: Cascade)
+}
+
+model userClasses {
+  id          Int   @id @default(autoincrement()) 
+  UserId      String
+  user        User  @relation(fields: [UserId], references: [id])
+
+  classId     Int
+  class       Class @relation(fields: [classId], references: [id])
+
+  @@unique([userId, classId])
+}
+
+model Class {
+  id            Int  @id @default(autoincrement())
+  type          String
+  src           String
+  schedule      String
+  ClassDesc     String  @db.Text
+
+  userClasses   UserClasses[]  @relation("ClassUsers")
+}
+
+model TwoFactorToken {
+  id        String @id @default(cuid())
+  email     string
+  token     string @unique
+  expires   DateTime
+
+  @@unique([email, token])
+}
+
+model TwoFactorConfirmation {
+  id        String @id @default(cuid())
+  userId    @unique
+  user      User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+}

@@ -1,0 +1,38 @@
+.depositions{
+    background-color: #D9D9D9;
+    padding-bottom: 20px;
+}
+
+.title{
+    background-color: rgb(255, 0, 0);
+    border-top-right-radius: 32px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 24%;
+}
+
+.slider_container{
+    display: flex;
+}
+
+
+
+@media screen and (min-width: 993px){
+
+}
+
+@media screen and (max-width: 992px){
+
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 600px){
+    .title{
+        font-size: 20px;
+        width: 60%;
+    }
+}

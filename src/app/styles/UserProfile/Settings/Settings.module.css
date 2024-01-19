@@ -1,0 +1,112 @@
+.settings{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 48px;
+    width: min-content;
+}
+
+.settings form label{
+    margin-bottom: 4px;
+}
+
+.settings form input{
+    background-color: #D1CFCF;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    color: #878787;
+    font-size: 14px;
+    margin-bottom: 12px;
+    padding: 6px;
+    padding-left: 10px;
+}
+
+.settings form input:focus{
+    border-top: none;
+    border-right: none;
+    outline: none;
+}
+
+.settings form input::placeholder{
+    font-size: 14px;
+}
+
+.settings form button[type='submit']{
+    align-self: flex-end;
+    background-color: #000;
+    border: 1px solid #000;
+    color: #FFF;
+    font-weight: bold;
+    margin-top: 16px;
+    padding: 6px 24px;
+    transition: .4s;
+}
+
+.settings form button:hover{
+    background-color: transparent;
+    color: #000;
+}
+
+
+
+@media screen and (max-width: 1280px){
+
+}
+
+@media screen and (max-width: 992px){
+    .settingsContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .settings{
+        align-self: center;
+        width: min-content;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .settings{
+        padding-right: 8px;
+        width: 100%;
+    }
+
+    .settings form div:first-of-type{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 4px;
+    }
+
+    .settings form input[type="text"]:first-of-type{
+        margin-bottom: 4px;
+    }
+
+    .settings form div:nth-of-type(4) div{
+        width: 84%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .settings{
+        padding-right: 8px;
+        width: 100%;
+    }
+
+    .settings form div:first-of-type{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 4px;
+    }
+
+    .settings form input[type="text"]:first-of-type{
+        margin-bottom: 4px;
+    }
+
+    .settings form div:nth-of-type(4) div{
+        width: 84%;
+    }
+}

@@ -1,0 +1,32 @@
+.msgContainer{
+    border-radius: 8px;
+    display: flex;
+    position: fixed;
+    padding: 8px 20px;
+    right: 4%;
+    top: 90%;
+    width: fit-content;
+    z-index: 30;
+}
+
+.msg{
+    align-items: center;
+    color: #FFF;
+    display: flex;
+    font-size: 16px;
+    gap: 12px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.ok{
+    background-color: #2ECC71;
+}
+
+.error{
+    background-color: #FF6347;
+}
+
+.hide{
+    display: none;
+}

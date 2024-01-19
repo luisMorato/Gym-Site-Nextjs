@@ -1,0 +1,132 @@
+.login_container{
+    background-color: #1E1E1E;
+    padding: 120px 0;
+}
+
+.login{
+    align-items: center;
+    background-color: #D9D9D9;
+    border-radius: 16px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 24px 100px 52px 100px;
+    width: fit-content;
+}
+
+.login h1{
+    font-size: 28px;
+    font-weight: 500;
+    position: relative;
+}
+
+.login h1::after{
+    background-color: #ff0000;
+    content: '';
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+}
+
+.login input{
+    background-color: transparent;
+    border: 1px solid #9E9C9C;
+    color: #000;
+    padding: 4px;
+    padding-left: 8px;
+    width: 100% !important; 
+}
+
+.login_form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form_inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-bottom: 28px;
+}
+
+.form_inputs input{
+    background-color: transparent;
+    border: 1px solid #9E9C9C;
+    color: #000;
+    padding: 4px;
+    width: 100% !important; 
+}
+
+.form_inputs input:focus, .login input{
+    outline: none;
+}
+
+.form_inputs label{
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.form_inputs label:last-of-type{
+    margin-top: 16px;
+}
+
+.login button{
+    align-self: center;
+    align-items: center;
+    background-color: #BAB9B9;
+    display: flex;
+    gap: 4px;
+    font-weight: bold;
+    padding: 4px 20px;
+    transition: .2s ease-in;
+    width: fit-content;
+}
+
+.login .login_form button{
+    align-items: center;
+    background-color: #BAB9B9;
+    display: flex;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 24px;
+    transition: .2s ease-in;
+    width: fit-content;
+}
+
+.login_form button:hover, .login button:hover{
+    /*background-color: #919090;*/
+    box-shadow: 4px 4px 4px #888;
+}
+
+
+@media screen and (max-width: 992px){
+    
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 600px){
+    .login{
+        padding: 24px 0px 52px 0px;
+        width: 100%;
+    }
+
+    .login h1{
+        font-size: 24px;
+    }
+
+    .login_form button{
+        padding: 6px 18px;
+    }
+}

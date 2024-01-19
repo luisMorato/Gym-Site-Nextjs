@@ -1,0 +1,103 @@
+.choose_us{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 32px;
+}
+
+.image{
+    background-image: url("/imgs/Meu projeto.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    width: 50%;
+    transform: translateX(-192px);
+}
+
+.explanation{
+    transform: translateX(-192px);
+    width: 20%;
+}
+
+.explanation h2{
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Kaisei Decol', serif;
+    position: relative;
+}
+
+.explanation h2::after{
+    background-color: rgb(255, 0, 0);
+    content: '';
+    left: 0;
+    margin-top: 2px;
+    top: 100%;
+    position: absolute;
+    height: 3px;
+    width: 36%;
+}
+
+.explanation p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+
+@media screen and (max-width: 1280px){
+    .choose_us{
+        justify-content: space-evenly;
+    }
+
+    .image, .explanation{
+        transform: translateX(0);
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .choose_us{
+        justify-content: space-evenly;
+    }
+
+    .image, .explanation{
+        transform: translateX(0);
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .choose_us{
+        justify-content: space-evenly;
+    }
+
+    .image, .explanation{
+        transform: translateX(0);
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .choose_us{
+        padding-top: 16px;
+    }
+    
+    .image{
+        display: none;
+    }
+
+    .explanation{
+        transform: translateX(0px);
+        width: 80%;
+        align-self: center;
+    }
+
+    .explanation h2{
+        font-size: 24px;
+    }
+
+    .explanation p{
+        font-size: 14px;
+    }
+}

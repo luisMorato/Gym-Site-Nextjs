@@ -1,0 +1,25 @@
+.coach_card{
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.coach_card img{
+    filter: saturate(50%);
+    filter: drop-shadow(20px 7px 5px rgba(0, 0, 0, 0.25));
+    opacity: .8;
+    height: auto;
+    width: auto;
+}
+
+.coach_card:hover img{
+    opacity: 1;
+}
+
+.coach_card p{
+    font-size: 14px;
+    font-weight: bold;
+}
+

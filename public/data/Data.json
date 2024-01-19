@@ -1,0 +1,398 @@
+{
+    "coaches": [
+        {
+            "name": "Jay Butler",
+            "profession": "Personal Trainer",
+            "imgSrc": "/imgs/590c530d0d3ee847c87ae189986f9fc6.png"
+        },
+        {
+            "name": "Ronnie Callman",
+            "profession": "Professional Bodybuilder",
+            "imgSrc": "/imgs/4d4c721c8fdc22072203494c75b9e076.png"
+        },
+        {
+            "name": "Kevin Malone",
+            "profession": "Personal Trainer",
+            "imgSrc": "/imgs/desktop-wallpaper-kevin-levrone-age-height-weight.png"
+        }
+    ],
+
+    "slides": [
+        {
+            "id": 0,
+            "imgSrc": "/imgs/muscular-young-woman-athlete-with-skipping-rope-black.jpg",
+            "text": "“My name is Isabella and I have been a member of the 3CCGYM Academy for over a year. I can say that my journey here has been incredible! From day one, I was welcomed by a warm and professional team that made me feel welcome and motivated to achieve my goals.”",
+            "name": "Isabella Rivers"
+        },
+        {
+            "id": 1,
+            "imgSrc": "/imgs/successful-sporty-male-shows-his-big-finger-up.jpg",
+            "text": "“I'm Noah, and joining 3CCGYM Academy was a game-changer for me. The trainers not only focused on my physical progress but also on my overall well-being. It's not just about getting fit; it's about a holistic approach to health.”",
+            "name": "Noah Parker"
+        },
+        {
+            "id": 2,
+            "imgSrc": "/imgs/handsome-black-man-is-engaged-gym.jpg",
+            "text": "“This is Ethan speaking. Joining 3CCGYM Academy was a turning point for me. The variety of classes, from high-intensity to yoga, kept me engaged. The supportive staff and fellow members created a friendly environment that made me excited to work out.”",
+            "name": "Ethan Turner"
+        },
+        {
+            "id": 3,
+            "imgSrc": "/imgs/portrait-smiling-afro-american-sports-man-with-arms-folded-looking-camera.jpg",
+            "text": "“I'm Caleb, and I'm thrilled with my experience at 3CCGYM Academy. The trainers are passionate and know their stuff. The gym's modern facilities and positive energy keep me motivated. It's the perfect place to chase your fitness goals.”",
+            "name": "Caleb Mitchell"
+        },
+        {
+            "id": 4,
+            "imgSrc": "/imgs/portrait-adult-fitness-coach-lady-looking-camera-with-empty-gym-background-fit-body-concept.jpg",
+            "text": "“I'm Mia. 3CCGYM Academy made fitness enjoyable for me. The friendly staff, cutting-edge equipment, and positive ambiance made every workout session exciting. It's not just about getting fit; it's about embracing a healthy lifestyle.”",
+            "name": "Mia Jones"
+        }],
+
+    "plans": [
+        {
+            "id": 1,
+            "level": "Begginer",
+            "price": 30,
+            "planAcesses": [
+                {
+                    "id": "Begginer1",
+                    "string":"Gym access during business hours"
+                },
+                {
+                    "id": "Begginer2",
+                    "string":"Physical assessment with a personal"
+                },
+                {
+                    "id": "Begginer3",
+                    "string":"Personalized Workouts"
+                },
+                {
+                    "id": "Begginer4",
+                    "string":"Cycling & Zumba"
+                },
+                {
+                    "id": "Begginer5",
+                    "string":"Access to all gym equipment"
+                },
+                {
+                    "id": "Begginer6",
+                    "string":"Access to showers and changing rooms"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "level": "Premium",
+            "price": 100,
+            "planAcesses": [
+                {
+                    "id":"Premium1",
+                    "string":"All the benefits of the 'Standard' plan"
+                },
+                {
+                    "id":"Premium2",
+                    "string":"Training with a high level personal trainer"
+                },
+                {
+                    "id":"Premium3",
+                    "string":"Unlimited access to all classes"
+                },
+                {
+                    "id":"Premium4",
+                    "string":"Access to High tech equipment"
+                },
+                {
+                    "id":"Premium5",
+                    "string":"Access to the relaxation area"
+                },
+                {
+                    "id":"Premium6",
+                    "string":"Exclusive classes in small groups"
+                },
+                {
+                    "id":"Premium7",
+                    "string":"Exclusive parking for 'Premium' members"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "level": "Standard",
+            "price": 65,
+            "planAcesses": [
+                {
+                    "id":"Standard1",
+                    "string":"All the benefits of the 'Begginer' plan"
+                },
+                {
+                    "id":"Standard2",
+                    "string":"Additional functional training classes"
+                },
+                {
+                    "id":"Standard3",
+                    "string":"Pilates & yoga classes"
+                },
+                {
+                    "id":"Standard4",
+                    "string":"Access to Swimming Pool & Sauna"
+                },
+                {
+                    "id":"Standard5",
+                    "string":"Access to martial arts & boxing classes"
+                },
+                {
+                    "id":"Standard6",
+                    "string":"Orientation sessions with the nutritionist"
+                }
+            ]
+        }],
+
+    "classes": [
+        {
+            "id": 1,
+            "type": "Cycling",
+            "src": "/imgs/fit-woman-riding-on-the-spinning-bike-at-gym-wearing-sportive-outfit-exercising-alone-in-smoky-room-with-red-neon-lights-2E5362F.jpg",
+            "schedule": "Everyday -> 8:00am - 21:30pm",
+            "ClassDesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        },
+        {
+            "id": 2,
+            "type": "Meditation",
+            "src": "/imgs/sukhasana-posture.jpg",
+            "schedule": "Everyday -> 6:00am - 8:00am",
+            "ClassDesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        },
+        {
+            "id": 3,
+            "type": "Power Lifting",
+            "src": "/imgs/deadlift-powerlifting-homme-sm.jpg",
+            "schedule": "Everyday -> 10:00am - 21:00pm",
+            "ClassDesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        },
+        {
+            "id": 4,
+            "type": "Workout",
+            "src": "/imgs/young-bodybuilder-man-black-background-male-torso-muscle-relief.jpg",
+            "schedule": "Everyday -> 6:00am - 23:00pm",
+            "ClassDesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        },
+        {
+            "id": 5,
+            "type": "Muay-Thai",
+            "src": "/imgs/shirtless-kick-boxer-showing-his-punches-kicks-grey-background-studio.jpg",
+            "schedule": "Thursday -> 16:00am - 17:30pm",
+            "ClassDesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        },
+        {
+            "id": 6,
+            "type": "Karate",
+            "src": "/imgs/karate-athlete-with-red-belt.jpg",
+            "schedule": "Friday -> 16:00am - 17:30pm",
+            "ClassDesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        },
+        {
+            "id": 7,
+            "type": "Boxing",
+            "src": "/imgs/young-man-kickboxing-black.jpg",
+            "schedule": "Thursday -> 17:30am - 18:30pm",
+            "ClassDesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        },
+        {
+            "id": 8,
+            "type": "Functional",
+            "src": "/imgs/close-up-man-doing-crossfit-workout.jpg",
+            "schedule": "Everyday -> 8:00am - 10:00pm",
+            "ClassDesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        }
+    ],
+
+    "galleryImgs":[
+        {
+            "id": 1,
+            "src": "/imgs/woman-doing-squats-smith-machine.jpg",
+            "alt":"girl training"
+        },
+        {
+            "id": 2,
+            "src": "/imgs/full-body-portrait-athletic-shirtless-male-doing-biceps-workouts-with-dumbbells-gym-club.jpg",
+            "alt":"guy training"
+        },
+        {
+            "id": 3,
+            "src": "/imgs/woman-with-visible-abs-doing-fitness.jpg",
+            "alt":"girl standing"
+        },
+        {
+            "id": 4,
+            "src": "/imgs/sportswoman-sportswear-training-gym.jpg",
+            "alt":"girl running"
+        },
+        {
+            "id": 5,
+            "src": "/imgs/young-healthy-man-athlete-doing-exercise-with-ropes.jpg",
+            "alt":"guy training"
+        },
+        {
+            "id": 6,
+            "src": "/imgs/man-moving-giant-tire-wheel-gym.jpg",
+            "alt":"guy training"
+        },
+        {
+            "id": 7,
+            "src": "/imgs/strong-man-training-gym.jpg",
+            "alt":"guy running"
+        },
+        {
+            "id": 8,
+            "src": "/imgs/stronger-young-muscular-caucasian-athlete.jpg",
+            "alt":"guy training"
+        },
+        {
+            "id": 9,
+            "src": "/imgs/equipments-gym.jpg",
+            "alt":"gym place"
+        },
+        {
+            "id": 10,
+            "src": "/imgs/equipments-gym (1).jpg",
+            "alt":"gym place"
+        },
+        {
+            "id": 11,
+            "src": "/imgs/gym-with-indoor-cycling-equipment.jpg",
+            "alt":"gym place"
+        },
+        {
+            "id": 12,
+            "src": "/imgs/gym-interior-with-equipments-hd-image_908344-1312.jpg",
+            "alt":"gym place"
+        },
+        {
+            "id": 13,
+            "src": "/imgs/young-woman-practicing-gym-with-equipment-athletic-female-model-doing-exercises-training-body.jpg",
+            "alt":"girl training"
+        },
+        {
+            "id": 14,
+            "src": "/imgs/black-dumbbells-gym.jpg",
+            "alt":"dumbbells"
+        },
+        {
+            "id": 15,
+            "src": "/imgs/many-black-dumbbells.jpg",
+            "alt":"dumbbells"
+        }
+    ],
+
+    "ScheduleInfos":[
+        {
+            "id": 1,
+            "time":"5:30am - 10:30am",
+            "mon": "Pilates",
+            "tue": "Cardio",
+            "wed": "Yoga",
+            "thu": "Zumba",
+            "fri": "Power Lifting",
+            "sat": "Cycling",
+            "sun": "Muay Thai"
+        },
+        {
+            "id": 2,
+            "time":"10:30am - 12:30pm",
+            "mon": "Boxing",
+            "tue": "Workout",
+            "wed": "Meditation",
+            "thu": "Power Lifting",
+            "fri": "Cardio",
+            "sat": "Karate",
+            "sun": "Cycling"
+        },
+        {
+            "id": 3,
+            "time":"12:30pm - 14:00pm",
+            "mon": "Yoga",
+            "tue": "Cardio",
+            "wed": "Power Lifting",
+            "thu": "Zumba",
+            "fri": "Pilates",
+            "sat": "Cycling",
+            "sun": "Muay thai"
+        },
+        {
+            "id": 4,
+            "time":"14:00pm - 16:30pm",
+            "mon": "Meditation",
+            "tue": "Cardio",
+            "wed": "Boxing",
+            "thu": "Power Lifting",
+            "fri": "Workout",
+            "sat": "Cycling",
+            "sun": "Closed"
+        },
+        {
+            "id": 5,
+            "time":"16:30pm - 19:00pm",
+            "mon": "Yoga",
+            "tue": "Pilates",
+            "wed": "Zumba",
+            "thu": "Power Lifting",
+            "fri": "Cardio",
+            "sat": "Closed",
+            "sun": "Closed"
+        },
+        {
+            "id": 6,
+            "time":"19:00pm - 21:00pm",
+            "mon": "Power Lifting",
+            "tue": "Cardio",
+            "wed": "Zumba",
+            "thu": "Yoga",
+            "fri": "Pilates",
+            "sat": "Closed",
+            "sun": "Closed"
+        },
+        {
+            "id": 7,
+            "time":"21:00pm - 23:00pm",
+            "mon": "Yoga",
+            "tue": "Cardio",
+            "wed": "Zumba",
+            "thu": "Power Lifting",
+            "fri": "Pilates",
+            "sat": "Closed",
+            "sun": "Closed"
+        }
+    ],
+
+    "ContactTeamInfo":[
+        {
+            "id": 1,
+            "imgSrc": "/imgs/young-hispanic-woman-with-long-hair-standing-pink-background-looking-confident-camera-with-smile-with-crossed-arms-hand-raised-chin-thinking-positive.jpg",
+            "location": "MINNESOTA, US",
+            "name": "Courtney",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro fuga officia exercitationem!"
+        },
+        {
+            "id": 2,
+            "imgSrc": "/imgs/happiness-wellbeing-confidence-concept-cheerful-attractive-african-american-woman.jpg",
+            "location": "PENNSYLVANIA, US",
+            "name": "Katee",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro fuga officia exercitationem!"
+        },
+        {
+            "id": 3,
+            "imgSrc": "/imgs/smiling-bearded-man-business-clothes-with-crossed-arms.jpg",
+            "location": "RIO DE JANEIRO, BRAZIL",
+            "name": "Rodrigo",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro fuga officia exercitationem!"
+        },
+        {
+            "id": 4,
+            "imgSrc": "/imgs/portrait-beautiful-young-woman-standing-grey-wall.jpg",
+            "location": "BANSKO, BULGARIA",
+            "name": "Samantha",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro fuga officia exercitationem!"
+        }
+    ]
+}

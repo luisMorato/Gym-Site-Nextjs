@@ -1,0 +1,113 @@
+.profileContainer{
+    background-color: #1E1E1E;
+}
+
+.profileContent{
+    background-color: #D9D9D9;
+    color: #000;
+    display: flex;
+    margin: 0 auto;
+    padding: 16px 0;
+    width: min-content;
+}
+
+.sideMenu{
+    align-items: flex-end;
+    border-right: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px;
+    padding: 0 32px;
+    position: relative;
+    width: min-content;
+}
+
+.sideMenu li{
+    text-wrap: nowrap;
+}
+
+.icon{
+    border-radius: 100%;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.sideMenu div:hover li{
+    font-weight: bold;
+}
+
+.sideMenu div:hover .icon{
+    background-color: #a3a1a1;
+}
+
+.clicked .icon{
+    background-color: #a3a1a1;
+}
+
+.clicked li{
+    font-weight: bold;
+}
+
+.open li{
+    display: block;
+}
+
+.close li{
+    display: none;
+}
+
+
+@media screen and (max-width: 1280px){
+
+}
+
+@media screen and (max-width: 992px){
+    .profileContent{
+        width: 100%;
+    }
+
+    .sideMenu{
+        padding: 0 12px;
+        margin-right: 16px;
+    }
+
+    .sideMenu li, .sideMenu button{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .profileContent{
+        padding-right: 20px;
+        width: 80%;
+    }
+
+    .sideMenu{
+        margin-right: 20px;
+        padding: 0 20px;
+    }
+
+    .sideMenu li{
+        display: block;
+    }
+
+    .sideMenu button{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .profileContent{
+        padding-right: 8px;
+        width: 100%;
+    }
+
+    .sideMenu{
+        margin-right: 20px;
+        padding: 0 12px;
+    }
+
+    .sideMenu li, .sideMenu button{
+        display: none;
+    }
+}

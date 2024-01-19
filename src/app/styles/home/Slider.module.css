@@ -1,0 +1,143 @@
+.slider_card{
+    background-color: #383535;
+    border-top-left-radius: 104px;
+    border-bottom-right-radius: 104px;
+    display: flex;
+    margin: 32px auto;
+    padding: 32px 20px;
+    position: relative;
+    width: 48%;
+}
+
+.slider_card img{
+    width: auto;
+    height: auto;
+    border-top-left-radius: 104px;
+}
+
+.description{
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 32px;
+    margin-bottom: 40px;
+    text-align: left;
+    padding: 0 0 16px 0;
+}
+
+.quotation{
+    color: #FFF;
+    font-size: 96px;
+    margin-bottom: 20px;
+}
+
+.description blockquote{
+    width: 92%;
+}
+
+.description h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description div{
+    display: flex;
+    gap: 12px;
+    position: absolute;
+    top: 80%;
+    right: 12%;
+}
+
+.description div button{
+    border: 1px solid #D9D9D9;
+    border-radius: 100%;
+    padding: 8px;
+}
+
+.description button:hover{
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.637);
+}
+
+.hidden_slider_card{
+    display: none;
+}
+
+
+@media screen and (max-width: 1280px){
+    .slider_card{
+        width: 70%;
+    }
+
+    .quotation{
+        font-size: 96px;
+    }
+
+    .description div{
+        top: 82%;
+        right: 8%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .slider_card{
+        width: 92%;
+    }
+
+    .quotation{
+        font-size: 64px;
+    }
+
+    .description div{
+        top: 80%;
+        right: 12%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .slider_card{
+        width: 92%;
+    }
+
+    .quotation{
+        font-size: 64px;
+    }
+
+    .description div{
+        top: 80%;
+        right: 10%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .slider_card{
+        flex-direction: column;
+        width: 92%;
+        box-sizing: border-box;
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .quotation{
+        margin-top: 16px;
+        font-size: 64px;
+    }
+
+    .description blockquote{
+        font-size: 14px;
+        width: 96%;
+    }
+
+    .description h2{
+        font-size: 16px;
+    }
+
+    .description div{
+        top: 98%;
+        right: 12%;
+    }
+}

@@ -1,0 +1,66 @@
+.Info_Island_Bckgrd{
+    align-items: center;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 32px;
+}
+
+.info_island{
+    border: 1px solid black;
+    border-radius: 24px;
+    color: #000000;
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: center;
+    width: fit-content;
+    padding: 0 32px;
+}
+
+.info_island div{
+    padding: 16px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.info_island div:not(:last-child){
+    border-right: 1px solid rgb(0, 0, 0, .64);
+}
+
+
+@media screen and (min-width: 993px){
+
+}
+
+@media screen and (max-width: 992px){
+    .info_island{
+        font-size: 20px;
+        padding: 12px 12px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .info_island{
+        font-size: 16px;
+        padding: 0 12px;
+    }
+}
+
+@media screen and (max-width: 600px){
+   .info_island{
+        flex-direction: column;
+   }
+
+   .info_island{
+        font-size: 16px;
+        padding: 0 32px;
+   }
+
+   .info_island div:not(:last-child){
+        border-right: none;
+        border-bottom: 1px solid rgb(0, 0, 0, .64);
+        text-align: center;
+    }
+}

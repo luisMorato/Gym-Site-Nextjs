@@ -1,0 +1,51 @@
+.logo{
+    margin-top: 2px;
+}
+
+.logo h2{
+    font-size: 24px;
+    font-family: 'Gluten', cursive;
+    font-weight: bold;
+}
+
+.logo span{
+    color: #FD0000;
+}
+
+.logo p{
+    transform: translateY(-12px);
+    font-size: 12px;
+}
+
+
+
+.logo2x{
+    margin-top: 2px;
+}
+
+.logo2x h2{
+    font-size: 32px;
+    font-family: 'Gluten', cursive;
+    font-weight: bold;
+}
+
+.logo2x span{
+    color: #FD0000;
+}
+
+.logo2x p{
+    transform: translateY(-12px);
+    font-size: 16px;
+}
+
+
+@media screen and (min-width: 768px){
+    .logo{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 600px){
+    .logo{
+        margin-left: 0px;
+    }
+}

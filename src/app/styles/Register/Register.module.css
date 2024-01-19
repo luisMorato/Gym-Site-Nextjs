@@ -1,0 +1,145 @@
+.register_container{
+    background-color: #1E1E1E;
+    padding: 120px 0;
+}
+
+.register{
+    background-color: #D9D9D9;
+    border-radius: 16px;
+    margin: 0 auto;
+    padding: 24px 60px;
+    text-align: center;
+    width: fit-content;
+}
+
+.register h1{
+    color: #000000;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 36px;
+    position: relative;
+    text-align: center;
+}
+
+.register h1::after{
+    background-color: #ff0000;
+    content: '';
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    width: 28%;
+}
+
+.register form{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.register form input{
+    background-color: transparent;
+    border: 1px solid #9E9C9C;
+    color: #000;
+    font-size: 14px;
+    padding: 6px 12px;
+    width: 100% !important;
+}
+
+/* .emptyInputError form input:invalid:placeholder-shown{
+    border: 2px solid red;
+    animation: shake 0.5s ease-in-out;
+} */
+
+.register form input:focus{
+    outline: none;
+}
+
+.register form input::placeholder{
+    color: #9E9C9C;
+}
+
+.register form input[type=email]{
+    width: 100%;
+}
+
+.register form input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.register form input[type=number]{ 
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+
+.eye_icon{
+    color: #000;
+    cursor: pointer;
+    margin-left: -24px;
+}
+
+.register form p{
+    color: #9E9C9C;
+}
+
+.register form button{
+    align-items: center;
+    background-color: #BAB9B9;
+    color: #000000;
+    display: flex;
+    font-weight: bold;
+    font-size: 18px;
+    gap: 4px;
+    margin-bottom: 16px;
+    padding: 6px 32px;
+    width: fit-content;
+    transition: .2s ease-in;
+}
+
+.register form button:hover{
+    box-shadow: 4px 4px 4px #888;
+}
+
+
+@media screen and (max-width: 992px){
+
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 600px){
+    .register h1{
+        font-size: 24px;
+    }
+
+    .register form div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .eye_icon{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+
+    .register form
+    div:nth-of-type(3)
+    div:first-of-type
+    input[type=password]{
+        margin-bottom: 32px;
+    }
+
+    .register form
+    div:nth-of-type(3)
+    div:first-of-type
+    input[type=text]{
+        margin-bottom: 32px;
+    }
+}
